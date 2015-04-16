@@ -9,9 +9,24 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>KIFDemoForTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>UI Tests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>14E8D02D1ADFBC48009B5370</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>14E9EC111ACE990F00FEF7A3</key>
 		<dict>
 			<key>primary</key>

@@ -7,6 +7,7 @@
 //
 
 #import "TestLogin.h"
+#import "Constants.h"
 
 @implementation TestLogin
 
@@ -23,8 +24,8 @@
 - (void)testIncorrectLogin {
     
     
-    [tester enterText: @"incorrect@userName" intoViewWithAccessibilityLabel: @"UserName"];
-    [tester enterText: @"password" intoViewWithAccessibilityLabel: @"Password"];
+    [tester enterText: kIncorrectUserName intoViewWithAccessibilityLabel: @"UserName"];
+    [tester enterText: kPassword intoViewWithAccessibilityLabel: @"Password"];
     
     [tester tapViewWithAccessibilityLabel: @"EnterLogin"];
     [tester tapViewWithAccessibilityLabel: @"Ok"];
@@ -33,8 +34,8 @@
 
 - (void)testLogin {
     
-    [tester enterText: @"userName@my.com" intoViewWithAccessibilityLabel: @"UserName"];
-    [tester enterText: @"password" intoViewWithAccessibilityLabel: @"Password"];
+    [tester enterText: kCorrectUserName intoViewWithAccessibilityLabel: @"UserName"];
+    [tester enterText: kPassword intoViewWithAccessibilityLabel: @"Password"];
     
     [tester waitForTimeInterval: 2];
     
