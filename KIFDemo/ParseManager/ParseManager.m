@@ -12,28 +12,41 @@
 
 @implementation ParseManager
 
-- (void)loginWithUsername: (NSString *)username password: (NSString *)password success:(void(^)(BOOL success))success {
 
 #ifdef KIFDemo
 
+
+- (void)loginWithUsername: (NSString *)username password: (NSString *)password success: (ResultBlock )resultBlock {
+    
     [PFUser logInWithUsernameInBackground: username password: password block:^(PFUser *user, NSError *error) {
         if (!error) {
-            success(YES);
+            resultBlock(YES, nil);
         } else {
+            resultBlock(NO, error);
             NSLog(@"Error: %@", error.localizedDescription);
         }
     }];
-    
-#else
-
-    if ([username isEqualToString: kCorrectUserName] && [password isEqualToString: kPassword]) {
-        success(YES);
-    } else {
-        success(NO);
-    }
-
-#endif
 }
 
+#else
+
+- (void)loginWithUsername: (NSString *)username password: (NSString *)password success: (ResultBlock )resultBlock {
+    [self testLoginWithUsername: (NSString *)username password: (NSString *)password block: resultBlock];
+}
+#endif
+
+#pragma mark - Test Helpers
+
+- (void) testLoginWithUsername: (NSString *)username
+                      password: (NSString *)password
+                         block: (ResultBlock )resultBlock {
+    if ([username isEqualToString: kCorrectUserName] && [password isEqualToString: kPassword]) {
+        resultBlock(YES, nil);
+    } else {
+        NSError *theError = [NSError errorWithDomain: @"Login Error" code: 1 userInfo: @{NSLocalizedDescriptionKey : @"Your user name and password\nincorrect.\nTry again"}];
+        
+        resultBlock(NO, theError);
+    }
+}
 
 @end

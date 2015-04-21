@@ -28,17 +28,14 @@
 #pragma mark - Actions
 
 - (IBAction)loginAction:(UIButton *)sender {
-        
-    [self.parseManager loginWithUsername: self.userNameTextField.text
-                                password: self.passwordTextField.text
-                                 success:
-     ^(BOOL success) {
-         if (success) {
-             [self performSegueWithIdentifier: @"loginToWelcome" sender: self];
-         } else {
-             [self showErrorAlert];
-         }
-     }];
+    
+    [self.parseManager loginWithUsername: self.userNameTextField.text password: self.passwordTextField.text success:^(BOOL success, NSError *error) {
+        if (success) {
+            [self performSegueWithIdentifier: @"loginToWelcome" sender: self];
+        } else {
+            [self showError: error];
+        }
+    }];
 }
 
 - (IBAction)backButtonAction:(UIBarButtonItem *)sender {
@@ -47,9 +44,9 @@
 
 #pragma mark - Helpers
 
-- (void)showErrorAlert {
+- (void)showError: (NSError *)error {
     
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle: @"Sorry!" message: @"Your user name and password\nnot correct.\nTry again" preferredStyle: UIAlertControllerStyleAlert];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle: @"Sorry!" message: error.localizedDescription preferredStyle: UIAlertControllerStyleAlert];
     
     UIAlertAction *action = [UIAlertAction actionWithTitle: @"Ok" style: UIAlertActionStyleCancel handler: nil];
     [alert addAction: action];

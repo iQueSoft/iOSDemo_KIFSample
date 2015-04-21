@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void (^ResultBlock)(BOOL success, NSError *error);
+
 @interface ParseManager : NSObject
 
-- (void)loginWithUsername: (NSString *)username password: (NSString *)password success:(void(^)(BOOL success))success;
+- (void)loginWithUsername: (NSString *)username password: (NSString *)password success: (ResultBlock)result;
 
 @end
