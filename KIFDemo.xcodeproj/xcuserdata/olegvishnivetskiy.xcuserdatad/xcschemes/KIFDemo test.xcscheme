@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "14E8D02D1ADFBC48009B5370"
-               BuildableName = "KIFDemo copy.app"
-               BlueprintName = "KIFDemoForTests"
+               BuildableName = "KIFDemo test.app"
+               BlueprintName = "KIFDemo test"
                ReferencedContainer = "container:KIFDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14E8D02D1ADFBC48009B5370"
-            BuildableName = "KIFDemo copy.app"
-            BlueprintName = "KIFDemoForTests"
+            BuildableName = "KIFDemo test.app"
+            BlueprintName = "KIFDemo test"
             ReferencedContainer = "container:KIFDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -53,8 +53,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14E8D02D1ADFBC48009B5370"
-            BuildableName = "KIFDemo copy.app"
-            BlueprintName = "KIFDemoForTests"
+            BuildableName = "KIFDemo test.app"
+            BlueprintName = "KIFDemo test"
             ReferencedContainer = "container:KIFDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -72,8 +72,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14E8D02D1ADFBC48009B5370"
-            BuildableName = "KIFDemo copy.app"
-            BlueprintName = "KIFDemoForTests"
+            BuildableName = "KIFDemo test.app"
+            BlueprintName = "KIFDemo test"
             ReferencedContainer = "container:KIFDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

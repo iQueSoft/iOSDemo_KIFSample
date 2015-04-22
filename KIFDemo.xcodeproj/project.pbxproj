@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14C1381F1AE6910800517F02 /* ParseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C1381E1AE6910800517F02 /* ParseManager.m */; };
 		14E8D0331ADFBC48009B5370 /* BackBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E9EC5C1ACED99800FEF7A3 /* BackBarButtonItem.m */; };
 		14E8D0341ADFBC48009B5370 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E9EC1A1ACE990F00FEF7A3 /* AppDelegate.m */; };
 		14E8D0351ADFBC48009B5370 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E9EC171ACE990F00FEF7A3 /* main.m */; };
@@ -15,7 +16,6 @@
 		14E8D03B1ADFBC48009B5370 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14E9EC241ACE990F00FEF7A3 /* LaunchScreen.xib */; };
 		14E8D03C1ADFBC48009B5370 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E9EC221ACE990F00FEF7A3 /* Images.xcassets */; };
 		14E8D0471ADFBD41009B5370 /* ParseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8D0461ADFBD41009B5370 /* ParseManager.m */; };
-		14E8D0551ADFE61A009B5370 /* ParseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8D0461ADFBD41009B5370 /* ParseManager.m */; };
 		14E8D05D1ADFF891009B5370 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8D05C1ADFF891009B5370 /* StartViewController.m */; };
 		14E8D05E1ADFF891009B5370 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8D05C1ADFF891009B5370 /* StartViewController.m */; };
 		14E8D0611ADFF89E009B5370 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8D0601ADFF89E009B5370 /* WelcomeViewController.m */; };
@@ -52,7 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		14E8D0411ADFBC48009B5370 /* KIFDemo copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KIFDemo copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C1381E1AE6910800517F02 /* ParseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseManager.m; sourceTree = "<group>"; };
+		14E8D0411ADFBC48009B5370 /* KIFDemo test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KIFDemo test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E8D0421ADFBC48009B5370 /* KIFDemo copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "KIFDemo copy-Info.plist"; path = "/Users/olegvishnivetskiy/Documents/Apps/KIFDemo/KIFDemo copy-Info.plist"; sourceTree = "<absolute>"; };
 		14E8D0461ADFBD41009B5370 /* ParseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParseManager.m; path = ParseManager/ParseManager.m; sourceTree = "<group>"; };
 		14E8D0541ADFD9AF009B5370 /* ParseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParseManager.h; path = ParseManager/ParseManager.h; sourceTree = "<group>"; };
@@ -171,7 +172,7 @@
 				14E9EC121ACE990F00FEF7A3 /* KIFDemo.app */,
 				14E9EC2B1ACE990F00FEF7A3 /* KIFDemoTests.xctest */,
 				14E9EC3F1ACE9B0D00FEF7A3 /* UI Tests.xctest */,
-				14E8D0411ADFBC48009B5370 /* KIFDemo copy.app */,
+				14E8D0411ADFBC48009B5370 /* KIFDemo test.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -240,6 +241,7 @@
 			children = (
 				14E9EC4C1ACEB8EF00FEF7A3 /* TestLogin.h */,
 				14E9EC4D1ACEB8EF00FEF7A3 /* TestLogin.m */,
+				14C1381E1AE6910800517F02 /* ParseManager.m */,
 			);
 			name = TestLogin;
 			sourceTree = "<group>";
@@ -294,9 +296,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		14E8D02D1ADFBC48009B5370 /* KIFDemoForTests */ = {
+		14E8D02D1ADFBC48009B5370 /* KIFDemo test */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14E8D03E1ADFBC48009B5370 /* Build configuration list for PBXNativeTarget "KIFDemoForTests" */;
+			buildConfigurationList = 14E8D03E1ADFBC48009B5370 /* Build configuration list for PBXNativeTarget "KIFDemo test" */;
 			buildPhases = (
 				14E8D02E1ADFBC48009B5370 /* Check Pods Manifest.lock */,
 				14E8D02F1ADFBC48009B5370 /* Sources */,
@@ -308,9 +310,9 @@
 			);
 			dependencies = (
 			);
-			name = KIFDemoForTests;
+			name = "KIFDemo test";
 			productName = KIFDemo;
-			productReference = 14E8D0411ADFBC48009B5370 /* KIFDemo copy.app */;
+			productReference = 14E8D0411ADFBC48009B5370 /* KIFDemo test.app */;
 			productType = "com.apple.product-type.application";
 		};
 		14E9EC111ACE990F00FEF7A3 /* KIFDemo */ = {
@@ -408,7 +410,7 @@
 				14E9EC111ACE990F00FEF7A3 /* KIFDemo */,
 				14E9EC2A1ACE990F00FEF7A3 /* KIFDemoTests */,
 				14E9EC3E1ACE9B0D00FEF7A3 /* UI Tests */,
-				14E8D02D1ADFBC48009B5370 /* KIFDemoForTests */,
+				14E8D02D1ADFBC48009B5370 /* KIFDemo test */,
 			);
 		};
 /* End PBXProject section */
@@ -554,7 +556,7 @@
 				14E8D0621ADFF89E009B5370 /* WelcomeViewController.m in Sources */,
 				14E8D0661ADFF8B0009B5370 /* LoginViewController.m in Sources */,
 				14E8D0351ADFBC48009B5370 /* main.m in Sources */,
-				14E8D0551ADFE61A009B5370 /* ParseManager.m in Sources */,
+				14C1381F1AE6910800517F02 /* ParseManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,7 +595,7 @@
 /* Begin PBXTargetDependency section */
 		14E8D0441ADFBCB8009B5370 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 14E8D02D1ADFBC48009B5370 /* KIFDemoForTests */;
+			target = 14E8D02D1ADFBC48009B5370 /* KIFDemo test */;
 			targetProxy = 14E8D0431ADFBCB8009B5370 /* PBXContainerItemProxy */;
 		};
 		14E9EC2D1ACE990F00FEF7A3 /* PBXTargetDependency */ = {
@@ -638,7 +640,7 @@
 				);
 				INFOPLIST_FILE = "KIFDemo copy-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "KIFDemo copy";
+				PRODUCT_NAME = "KIFDemo test";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
@@ -658,7 +660,7 @@
 				);
 				INFOPLIST_FILE = "KIFDemo copy-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "KIFDemo copy";
+				PRODUCT_NAME = "KIFDemo test";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
@@ -746,6 +748,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_LOADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				HEADER_SEARCH_PATHS = (
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/Bolts\"",
@@ -817,7 +823,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2CA8BADED9AD6C7696D8E781 /* Pods-UI Tests.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KIFDemo.app/KIFDemo";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -829,7 +835,7 @@
 				INFOPLIST_FILE = "UI Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KIFDemo test.app/KIFDemo test";
 			};
 			name = Debug;
 		};
@@ -837,7 +843,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F5BA2A17C9A2BC799BB9FA73 /* Pods-UI Tests.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KIFDemo.app/KIFDemo";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -845,14 +851,14 @@
 				INFOPLIST_FILE = "UI Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KIFDemo test.app/KIFDemo test";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		14E8D03E1ADFBC48009B5370 /* Build configuration list for PBXNativeTarget "KIFDemoForTests" */ = {
+		14E8D03E1ADFBC48009B5370 /* Build configuration list for PBXNativeTarget "KIFDemo test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14E8D03F1ADFBC48009B5370 /* Debug */,

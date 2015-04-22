@@ -4,15 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>KIFDemo test.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>KIFDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
-		</dict>
-		<key>KIFDemoForTests.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
 		</dict>
 		<key>UI Tests.xcscheme</key>
 		<dict>
@@ -38,6 +38,11 @@
 			<true/>
 		</dict>
 		<key>14E9EC3E1ACE9B0D00FEF7A3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>14EE013F1AE7B91F003D4907</key>
 		<dict>
 			<key>primary</key>
 			<true/>
