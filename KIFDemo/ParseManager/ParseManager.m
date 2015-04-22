@@ -18,7 +18,6 @@
             resultBlock(YES, nil);
         } else {
             resultBlock(NO, error);
-            NSLog(@"Error: %@", error.localizedDescription);
         }
     }];
 }

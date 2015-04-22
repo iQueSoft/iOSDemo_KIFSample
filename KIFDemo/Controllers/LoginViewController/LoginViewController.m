@@ -9,6 +9,8 @@
 #import "LoginViewController.h"
 #import "ParseManager.h"
 
+static NSString * const kLoginToWelcomeSegueId = @"loginToWelcome";
+
 @interface LoginViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
@@ -31,7 +33,7 @@
     
     [self.parseManager loginWithUsername: self.userNameTextField.text password: self.passwordTextField.text success:^(BOOL success, NSError *error) {
         if (success) {
-            [self performSegueWithIdentifier: @"loginToWelcome" sender: self];
+            [self performSegueWithIdentifier: kLoginToWelcomeSegueId sender: self];
         } else {
             [self showError: error];
         }

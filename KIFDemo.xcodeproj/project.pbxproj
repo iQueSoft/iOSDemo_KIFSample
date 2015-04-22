@@ -63,7 +63,7 @@
 		14E8D0601ADFF89E009B5370 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WelcomeViewController.m; path = Controllers/WelcomeViewController/WelcomeViewController.m; sourceTree = "<group>"; };
 		14E8D0631ADFF8B0009B5370 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Controllers/LoginViewController/LoginViewController.h; sourceTree = "<group>"; };
 		14E8D0641ADFF8B0009B5370 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Controllers/LoginViewController/LoginViewController.m; sourceTree = "<group>"; };
-		14E8D06D1ADFFDEB009B5370 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		14E8D06D1ADFFDEB009B5370 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../KIFDemo/Constants.h; sourceTree = "<group>"; };
 		14E9EC121ACE990F00FEF7A3 /* KIFDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIFDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E9EC161ACE990F00FEF7A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14E9EC171ACE990F00FEF7A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -136,7 +136,6 @@
 		14E8D0671ADFF8C0009B5370 /* ParseManager */ = {
 			isa = PBXGroup;
 			children = (
-				14E8D06D1ADFFDEB009B5370 /* Constants.h */,
 				14E8D0541ADFD9AF009B5370 /* ParseManager.h */,
 				14E8D0461ADFBD41009B5370 /* ParseManager.m */,
 			);
@@ -239,6 +238,7 @@
 		14E9EC4F1ACEB8FB00FEF7A3 /* TestLogin */ = {
 			isa = PBXGroup;
 			children = (
+				14E8D06D1ADFFDEB009B5370 /* Constants.h */,
 				14E9EC4C1ACEB8EF00FEF7A3 /* TestLogin.h */,
 				14E9EC4D1ACEB8EF00FEF7A3 /* TestLogin.m */,
 				14C1381E1AE6910800517F02 /* ParseManager.m */,
